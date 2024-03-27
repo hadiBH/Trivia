@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { UserAction } from "../../../store/slice/user.slice";
 import { DUMMYDATA } from "../../../utilis/interfaces/question.interface";
 const MainPage = () => {
-  const [questions, setQuestion] = useState<QuizResponse | null>(DUMMYDATA);
+  const [questions, setQuestion] = useState<QuizResponse | null>(null);
   const dispatch = useDispatch();
 
   const startQuizHandler = async (
