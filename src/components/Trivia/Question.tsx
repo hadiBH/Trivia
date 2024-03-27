@@ -30,7 +30,7 @@ const Question = (props: QuestionProps) => {
 
   const [divs, setDivs] = useState(DIVS_INITIAL_STATE);
   const [randomDivIndex, setRandomDivIndex] = useState<number | null>(null);
-  const [tries, setTries] = useState<number>(0);
+  const [tries, setTries] = useState<number>(3);
   const [score, setScore] = useState<number>(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
