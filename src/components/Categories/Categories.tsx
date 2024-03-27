@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Category.module.scss";
-import CATAGORIES, { MenuIcons } from "../Menu/MenuIcons";
+import CATEGORIES, { MenuIcons } from "../Menu/MenuIcons";
 import Category from "./Category/Category";
 import { useOptions } from "../context/OptionContext";
 
@@ -19,9 +19,9 @@ const Categories = ({ startQuiz }: MenuProps) => {
   return (
     <div className={classes.__categoryContainer}>
       <h2 style={{ color: "white" }}>Select Category</h2>
-      <div className={classes.__catagories}>
-        {CATAGORIES.map((catagory: MenuIcons, index) => {
-          return <Category key={catagory.code + index} catagory={catagory} />;
+      <div className={classes.__categories}>
+        {CATEGORIES.map((category: MenuIcons, index) => {
+          return <Category key={category.code + index} category={category} />;
         })}
       </div>
       <div className={classes.__submit}>

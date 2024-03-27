@@ -13,28 +13,28 @@ import Art from "../../assets/menu icons/Art.svg";
 
 
 export interface MenuIcons {
-  catagory: string;
+  category: string;
   icon: string;
   code: string;
 }
 
-const CATAGORIES: MenuIcons[] = [
-  { catagory: "General Knowledge", icon: General, code: "9" },
-  { catagory: "Entertainment: Books", icon: Books, code: "10" },
-  { catagory: "Entertainment: Film", icon: Film, code: "11" },
-  { catagory: "Entertainment: Music", icon: Music, code: "12" },
-  { catagory: "Sports", icon: Sports, code: "21" },
-  { catagory: "History", icon: History, code: "23" },
-  { catagory: "Vehicles", icon: Vehicles, code: "28" },
-  { catagory: "Animals", icon: Animals, code: "27" },
-  { catagory: "Geography", icon: Geography, code: "22" },
-  { catagory: "Celebrities", icon: Celebrities, code: "26" },
-  { catagory: "Mythology", icon: Mythology, code: "20" },
+const CATEGORIES: MenuIcons[] = [
+  { category: "General Knowledge", icon: General, code: "9" },
+  { category: "Entertainment: Books", icon: Books, code: "10" },
+  { category: "Entertainment: Film", icon: Film, code: "11" },
+  { category: "Entertainment: Music", icon: Music, code: "12" },
+  { category: "Sports", icon: Sports, code: "21" },
+  { category: "History", icon: History, code: "23" },
+  { category: "Vehicles", icon: Vehicles, code: "28" },
+  { category: "Animals", icon: Animals, code: "27" },
+  { category: "Geography", icon: Geography, code: "22" },
+  { category: "Celebrities", icon: Celebrities, code: "26" },
+  { category: "Mythology", icon: Mythology, code: "20" },
   {
-    catagory: "Art",
+    category: "Art",
     icon: Art,
     code: "25",
   },
 ];
 
-export default CATAGORIES;
+export default CATEGORIES;
