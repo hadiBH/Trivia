@@ -1,0 +1,50 @@
+.__categoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .__catagories {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    .__category {
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 2px solid #04aa6d;
+      font-size: 1rem;
+      padding: 10px;
+      height: 30px;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+.__submit {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  .__btn {
+    cursor: pointer;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid #04aa6d;
+    color: black;
+    transition: ease-in-out 0.3s;
+    &:disabled {
+      transition: none;
+      border: white;
+      background: gray;
+    }
+    &:hover:not(:disabled) {
+      background: #04aa6d;
+    }
+  }
+}
