@@ -22,10 +22,9 @@
   }
   .board {
     background-image: url("../../assets/molebackgorund2.jpg");
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 50%;
     flex: 1;
-    margin-left: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +55,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-weight: bold;
-            color: rgb(0, 0, 0);
             z-index: 1;
             position: absolute;
           }
@@ -77,8 +75,14 @@
 
 @media only screen and (min-width: 700px) {
   .hole {
+    .mole {
+      overflow: visible;
+      span {
+        color: rgb(0, 0, 0);
+      }
+    }
     display: flex;
-    border: 3px solid red;
+    border: 3px solid rgb(58, 19, 197);
     height: 75px;
     width: 75px;
     border-radius: 50% 50% 0 0;
@@ -87,6 +91,13 @@
 
 @media only screen and (max-width: 700px) {
   .hole {
+    .mole {
+      overflow: visible;
+      span {
+        color: rgb(233, 233, 233);
+      }
+    }
+    color: white;
     display: flex;
     border: 3px solid red;
     height: 10vw;
