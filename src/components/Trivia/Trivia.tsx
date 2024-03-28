@@ -15,7 +15,6 @@ interface TriviaProps {
 
 const Trivia = ({ setQuestion, questions }: TriviaProps) => {
   const dispatch = useDispatch();
-  console.log(questions);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const { question, correct_answer, category, incorrect_answers } =
     questions[currentQuestion];
@@ -42,16 +41,16 @@ const Trivia = ({ setQuestion, questions }: TriviaProps) => {
 
   return (
     <div className={classes.__triviaContainer}>
-      <>
-        <Question
-          changeQuestion={changeQuestion}
-          category={category}
-          question={question}
-          correct_answer={correct_answer}
-          answers={incorrect_answers}
-        />
+      <Question
+        changeQuestion={changeQuestion}
+        category={category}
+        question={question}
+        correct_answer={correct_answer}
+        answers={incorrect_answers}
+      />
+      <div className={classes.__btn}>
         <button onClick={abortHandler}>Quit game</button>
-      </>
+      </div>
     </div>
   );
 };
