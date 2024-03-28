@@ -2,16 +2,24 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  button {
+  .__btn {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 6px 14px;
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-    border-radius: 6px;
-    border: none;
-    background: #ff0000;
-    color: #ffffff;
-    width: 100px;
+    padding: 10px;
+
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+      border-radius: 6px;
+      border: none;
+      background: #ff0000;
+      color: #ffffff;
+      width: 100px;
+    }
   }
 }
