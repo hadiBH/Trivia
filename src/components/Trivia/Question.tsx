@@ -10,7 +10,7 @@ interface QuestionProps {
   question: string;
   correct_answer: string;
   answers: string[];
-  changeQuestion: (score: number) => void;
+  changeQuestion: (score: number, isLost?: boolean) => void;
 }
 
 const DIVS_INITIAL_STATE = [
@@ -68,7 +68,7 @@ const Question = (props: QuestionProps) => {
     }
     if (tries - 1 === 0) {
       setTries(3);
-      changeQuestion(score);
+      changeQuestion(score, true);
       return;
     }
     setTries((prev) => prev - 1);
