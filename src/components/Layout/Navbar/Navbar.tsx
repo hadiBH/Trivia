@@ -1,5 +1,4 @@
 import classes from "./Navbar.module.scss";
-import Logo from "../../../assets/TriviaLogo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../store/store";
 import { UserAction } from "../../../store/slice/user.slice";
@@ -10,9 +9,7 @@ const Navbar = () => {
   const user = useSelector((state: RootState) => state.user);
   return (
     <header className={classes.__headerContainer}>
-      <Link className={classes.__link} to={"/"}>
-        <img src={Logo} alt="Trivia Logo" className={classes.__image} />
-      </Link>
+      <Link className={classes.__link} to={"/"}></Link>
       <div className={classes.__links}>
         <Link className={classes.__link} to={"/main"}>
           Home
