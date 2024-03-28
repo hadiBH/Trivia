@@ -14,7 +14,8 @@ const BASE_RESPOINSE: QuizResponse = {
 
 export const getQuestions = async (
   code: string,
-  difficulty: string
+  difficulty: string,
+  category: string
 ): Promise<QuizResponse> => {
   try {
     const { data } = await axios.get(API_BASE_URL, {
@@ -27,18 +28,8 @@ export const getQuestions = async (
       },
     });
     if (data.response_code === 0) return data;
-    //TODO: fix UI Broke
-    // const { newData } = await axios.get(API_BASE_URL, {
-    //   headers: { ...HEADERS },
-    //   params: {
-    //     amount: "50",
-    //     category: BASE_CODE,
-    //     difficulty: difficulty.toLocaleLowerCase(),
-    //     type: "multiple",
-    //   },
-    // });
     return BASE_RESPOINSE;
   } catch (e) {
-    console.log(e);
+    console.log(`Error with quiz category:${category}`);
   }
 };
