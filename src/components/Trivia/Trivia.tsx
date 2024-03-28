@@ -19,18 +19,21 @@ const Trivia = ({ setQuestion, questions }: TriviaProps) => {
   const { question, correct_answer, category, incorrect_answers } =
     questions[currentQuestion];
 
-  const changeQuestion = (score: number) => {
-    if (currentQuestion === questions.length - 1) {
-      dispatch(
-        UserAction.update({
-          category: category,
-          score,
-        })
-      );
-      setCurrentQuestion(0);
-      setQuestion(null);
-      return;
-    }
+  const endGame = (score: number) => {
+    dispatch(
+      UserAction.update({
+        category: category,
+        score,
+      })
+    );
+    setCurrentQuestion(0);
+    setQuestion(null);
+  };
+
+  const changeQuestion = (score: number, isLost?: boolean) => {
+    if (currentQuestion === questions.length - 1 || isLost)
+      return endGame(score);
+
     setCurrentQuestion((prev) => prev + 1);
   };
 
