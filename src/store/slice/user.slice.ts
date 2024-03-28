@@ -28,22 +28,18 @@ const UserSlice = createSlice({
     logout(state) {
       state.isAuth = false;
     },
-    startTest(state, action) {
-      if (action.payload in state.stats) {
-        state.stats[action.payload].numberOfTests += 1;
-      } else {
-        state.stats[action.payload] = {
-          numberOfTests: 1,
-          correctAnswers: 0,
-        };
-      }
-    },
 
     update(state, action) {
       const { category, score } = action.payload;
-      console.log(category, score);
-
-      state.stats[category].correctAnswers += score;
+      if (category in state.stats) {
+        state.stats[category].numberOfTests += 1;
+        state.stats[category].correctAnswers += score;
+      } else {
+        state.stats[category] = {
+          numberOfTests: 1,
+          correctAnswers: score,
+        };
+      }
     },
   },
 });
