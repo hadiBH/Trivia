@@ -7,6 +7,7 @@ const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 const Precentage = () => {
   const stats = useSelector((state: RootState) => state.user.stats);
   const data = getPrecentage(stats);
+  console.log(data);
   const options = {
     animationEnabled: true,
     title: {
@@ -25,7 +26,7 @@ const Precentage = () => {
         type: "doughnut",
         showInLegend: true,
         indexLabel: "{name}: {y}",
-        yValueFormatString: "#,###'%'",
+        yValueFormatString: "0'%'",
         dataPoints: data.data,
       },
     ],

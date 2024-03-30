@@ -30,7 +30,7 @@ const Question = (props: QuestionProps) => {
 
   const [divs, setDivs] = useState(DIVS_INITIAL_STATE);
   const [randomDivIndex, setRandomDivIndex] = useState<number | null>(null);
-  const [tries, setTries] = useState<number>(3);
+  const [tries, setTries] = useState<number>(5);
   const [score, setScore] = useState<number>(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -61,7 +61,6 @@ const Question = (props: QuestionProps) => {
     const index = LETTERS.indexOf(contnet);
     const isCorrect = answers[index] === correct_answer;
     if (isCorrect) {
-      setTries(3);
       setScore((prev) => prev + 10);
       changeQuestion(score + 10);
       return;
@@ -72,15 +71,14 @@ const Question = (props: QuestionProps) => {
       return;
     }
     setTries((prev) => prev - 1);
-    setScore((prev) => (prev - 5 < 0 ? 0 : prev - 5));
   };
 
   return (
     <>
       <div className={classes.__question}>
-        <h2>Tries left: {tries}</h2>
-        <h2>Score: {score}</h2>
-        <h2 dangerouslySetInnerHTML={{ __html: question }} />
+        <h3>Tries left: {tries}</h3>
+        <h3>Score: {score}</h3>
+        <h3 dangerouslySetInnerHTML={{ __html: question }} />
         <div className={classes.__answers}>
           <h4>
             {answers.map((answer, index) => {
@@ -95,28 +93,30 @@ const Question = (props: QuestionProps) => {
             })}
           </h4>
         </div>
-        <div className={classes.board}>
-          <div className={classes.holes}>
-            {divs.map((div, index) => (
-              <div
-                className={classes.hole}
-                key={div.id}
-                onClick={
-                  index === randomDivIndex
-                    ? () => {
-                        handleClick(div.content);
-                      }
-                    : null
-                }
-              >
-                {index === randomDivIndex && (
-                  <div className={classes.mole}>
-                    <span>{div.content}</span>
-                    <img src={mole} alt="mole" />
-                  </div>
-                )}
-              </div>
-            ))}
+        <div className={classes.game}>
+          <div className={classes.board}>
+            <div className={classes.holes}>
+              {divs.map((div, index) => (
+                <div
+                  className={classes.hole}
+                  key={div.id}
+                  onClick={
+                    index === randomDivIndex
+                      ? () => {
+                          handleClick(div.content);
+                        }
+                      : null
+                  }
+                >
+                  {index === randomDivIndex && (
+                    <div className={classes.mole}>
+                      <span>{div.content}</span>
+                      <img src={mole} alt="mole" />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

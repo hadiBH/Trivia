@@ -3,8 +3,10 @@ export interface statsInterface {
   [key: string]: {
     numberOfTests: number;
     correctAnswers: number;
+    numOfQuestions: number;
   };
 }
+
 export interface UserState {
   isAuth: boolean;
   name: string;
@@ -30,14 +32,16 @@ const UserSlice = createSlice({
     },
 
     update(state, action) {
-      const { category, score } = action.payload;
+      const { category, score, numOfQuestions } = action.payload;
       if (category in state.stats) {
         state.stats[category].numberOfTests += 1;
         state.stats[category].correctAnswers += score;
+        state.stats[category].numOfQuestions += numOfQuestions;
       } else {
         state.stats[category] = {
           numberOfTests: 1,
           correctAnswers: score,
+          numOfQuestions: numOfQuestions,
         };
       }
     },

@@ -24,6 +24,7 @@ const Trivia = ({ setQuestion, questions }: TriviaProps) => {
       UserAction.update({
         category: category,
         score,
+        numOfQuestions: currentQuestion,
       })
     );
     setCurrentQuestion(0);

@@ -2,12 +2,25 @@ import { statsInterface } from "../store/slice/user.slice";
 export const getCategoryTestCounts = (
   stats: statsInterface
 ): { label: string; y: number }[] => {
-  const categoryTestCounts: { label: string; y: number }[] = [];
+  const categoryTestCounts: { label: string; y: number }[] = [
+    { label: "General Knowledge", y: 0 },
+    { label: "Entertainment: Books", y: 0 },
+    { label: "Entertainment: Film", y: 0 },
+    { label: "Entertainment: Music", y: 0 },
+    { label: "Sports", y: 0 },
+    { label: "History", y: 0 },
+    { label: "Vehicles", y: 0 },
+    { label: "Animals", y: 0 },
+    { label: "Geography", y: 0 },
+    { label: "Celebrities", y: 0 },
+    { label: "Mythology", y: 0 },
+    { label: "Art", y: 0 },
+  ];
+
   for (const key of Object.keys(stats)) {
-    categoryTestCounts.push({
-      label: key,
-      y: stats[key].numberOfTests,
-    });
+    const index = categoryTestCounts.findIndex((obj) => obj.label === key);
+    if (index === -1) continue;
+    categoryTestCounts[index].y = stats[key].numberOfTests;
   }
 
   return categoryTestCounts;
@@ -28,30 +41,29 @@ export const getPrecentage = (stats: statsInterface): PercentageData => {
   const categoryPercentages: { name: string; y: number }[] = [];
 
   for (const category in stats) {
-    const { correctAnswers, numberOfTests } = stats[category];
-    const categoryTotalCorrect = correctAnswers;
-    const categoryTotalQuestions = numberOfTests * 5; // Each test has 5 questions
+    const { correctAnswers, numOfQuestions } = stats[category];
+    console.log(category, correctAnswers, numOfQuestions);
+    const categoryTotalCorrect = correctAnswers / 10;
+    const categoryTotalQuestions = numOfQuestions;
 
     totalCorrectAnswers += categoryTotalCorrect;
     totalQuestions += categoryTotalQuestions;
-
-    const categoryPercentage =
+    console.log(isNaN((0 / 0) * 100));
+    let categoryPercentage =
       (categoryTotalCorrect / categoryTotalQuestions) * 100;
 
-    categoryPercentages.push({ name: category, y: categoryPercentage / 10 });
+    if (isNaN(categoryPercentage)) categoryPercentage = 0;
+
+    categoryPercentages.push({ name: category, y: categoryPercentage });
   }
 
-  const totalTests = Object.values(stats).reduce(
-    (acc, curr) => acc + curr.numberOfTests,
-    0
-  );
-
-  totalQuestions = totalTests * 10;
-
   const totalPercentage = (totalCorrectAnswers / totalQuestions) * 10;
+  console.log(totalPercentage);
 
   return {
-    label: `Total : ${totalPercentage.toFixed(2)}%`,
+    label: isNaN(totalPercentage)
+      ? ""
+      : `Total : ${totalPercentage.toFixed(2)}%`,
     data: categoryPercentages,
   };
 };

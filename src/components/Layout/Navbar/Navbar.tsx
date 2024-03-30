@@ -10,14 +10,17 @@ const Navbar = () => {
   return (
     <header className={classes.__headerContainer}>
       <Link className={classes.__link} to={"/"}></Link>
-      <div className={classes.__links}>
-        <Link className={classes.__link} to={"/main"}>
-          Home
-        </Link>
-        <Link className={classes.__link} to={"/stats"}>
-          Statistics
-        </Link>
-      </div>
+      {user.isAuth && (
+        <div className={classes.__links}>
+          <Link className={classes.__link} to={"/main"}>
+            Home
+          </Link>
+          <Link className={classes.__link} to={"/stats"}>
+            Statistics
+          </Link>
+        </div>
+      )}
+
       <div className={classes.__user}>
         {user.isAuth ? (
           <>
