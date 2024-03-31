@@ -28,14 +28,19 @@ Each session includes trivia questions, with players aiming to achieve a maximum
 ## Statistics
 
 In our app, there is a Statistics section that provides users with insights into their practice performance, helping users to track their progress and identify areas for improvement.
-
-One of the key components is the progress chart, which provides a visual representation of the performance across different subjects in the trivia. As you continue to practice, regardless of whether your answers are correct or incorrect, the chart dynamically adjusts to reflect the progress in each subject. This allows the user to easily see which subjects they have practiced the most and those that may require additional attention. 
-
+One of the key components is the progress chart, which provides a visual representation of the performance across different subjects in the trivia. As you continue to practice, the chart dynamically adjusts to reflect the progress in each subject. This allows the user to easily see which subjects they have practiced the most and those that may require additional attention. 
 Additionally, when you start practicing the trivia game, a pie chart appears, showcasing the percentage of correct answers you've achieved overall. This chart is segmented by subjects, giving you insights into the proportion of correct answers within each subject area, enabling the user to focus their efforts accordingly.
+Graph Column Description
+The column in our graph represents the frequency of gameplay for each theme. It illustrates the number of times you've engaged with each subject, providing insight into your level of interest and focus on specific topics.
+Pie Chart Description
+The pie chart visually represents the distribution of correct answers within each subject relative to the total number of attempted questions multiplied by the number of tests taken. Each segment of the pie chart corresponds to a subject, with the size of the segment indicating the proportion of correct answers achieved within that subject area. This calculation offers a comprehensive view of performance efficiency across different subjects.
+Percentage Inside the Circle Description
+The percentages displayed inside the circle represent the cumulative number of correct answers obtained across all subjects relative to the total number of questions in all tests. 
 
 
 ## Our Vision of Whac A Mole Study Buddy
 Integrating education with entertainment through games like Whac A Mole Study Buddy offers a transformative approach to learning, bridging the gap between traditional study methods and engaging, interactive experiences. By infusing educational content into a familiar and enjoyable format, such as the classic Whac-A-Mole game, our Study Buddy taps into the intrinsic human desire for fun and excitement. Through gamification, users are incentivized to actively participate in their learning journey, as the thrill of gameplay motivates them to tackle challenging questions and strive for mastery.
+In our game, we've integrated a learning component to earn points, incorporating trivia questions that challenge users to consider the correct answers. Inspired by the original game's bomb element, we've transformed wrong answers into bombs, urging players to be cautious. However, fear not! Every mistake serves as a learning opportunity, enriching the experiential learning process. With multiple attempts available, users can engage in strategic learning, refining their knowledge and decision-making skills while progressing through the game.
 
 
 ## Project Components and Technologies
@@ -54,29 +59,41 @@ For deployment and hosting, we rely on Render, a robust platform that offers sca
 
 
 ## Getting Started
-### Login Page:
-Upon launching the game, you will be greeted with a login page where you can enter your credentials to access the game. 
+### Login Page
+Upon launching the game, you will be greeted with a login page where you can enter your name to access the game. 
+
 ![WhatsApp Image 2024-03-30 at 20 52 21](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/35275e24-771d-4207-a3d9-fb186b3c602a)
 
-### Select Difficulty and Question Type:
+### Select Difficulty and Question Type
 After logging in successfully, you can choose between easy or hard difficulty levels and select the type of trivia questions you want to answer. 
+
 ![WhatsApp Image 2024-03-30 at 20 53 01](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/0d65d680-11ab-4e33-9501-cb801a215a99)
 ![WhatsApp Image 2024-03-30 at 20 53 30](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/83fedd96-25f1-47e6-bb04-4cfac4eb38b6)
 
 ## Playing the Game
-### Gameplay:
+### Gameplay
 Once you've selected your preferences, the game begins! You will have 5 attempts to answer as many trivia questions as you can. A mole will pop out of a hole with a possible answer. Be careful not to be reckless and click on the wrong answer—stay focused!
 
-### Whack the Mole:
-As the mole pops up with a potential answer, click on the correct one as quickly as possible to score points. But be vigilant, clicking on the wrong answer will cost you valuable points!
+### Whack the Mole
+As the mole pops up with a potential answer, click on the correct one as quickly as possible to score points. But be vigilant, clicking on the wrong answer will decrease your remaining tries.
+Keep an eye on your remaining tries. Each incorrect click reduces your tries, so use them wisely!
 
-### Score Tracking:
+### Score Tracking
 Your score will be tracked throughout the game, providing you with instant feedback on your performance.
 ![WhatsApp Image 2024-03-30 at 20 53 48](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/c1c11232-c72f-494d-9642-0cfc57c3898b)
 
 ## Analyzing Your Progress
-### Statistics:
+### Statistics
 After playing a few rounds, you can visit the statistics section to review your performance. Discover which subjects are your strengths and which ones need improvement. 
+
+For instance, the statistics may reveal that user's highest success rate, currently at 40%, lies in the subject of history.
+#### Subject Frequency
+The columns in the table represent the number of times you've engaged with each subject. For instance, in this case user played Entertainment music the most times, it indicates a significant passion on that subject, but this does not necessarily mean that the user is strong on this subject.
+
+#### Success Analysis
+Delve into the success percentages to assess your proficiency in various areas. For instance, if you have a success rate of 7% in music, it suggests room for improvement in this subject. Conversely, if your success rate in geography is low or non-existent, it indicates an area that requires attention and practice.
+
+
 ![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/10568114-5768-460d-8efb-f2b14853dd84)
 
 We hope you like our study buddy,
