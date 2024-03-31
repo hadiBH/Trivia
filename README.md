@@ -30,11 +30,11 @@ Each session includes trivia questions, with players aiming to achieve a maximum
 In our app, there is a Statistics section that provides users with insights into their practice performance, helping users to track their progress and identify areas for improvement.
 One of the key components is the progress chart, which provides a visual representation of the performance across different subjects in the trivia. As you continue to practice, the chart dynamically adjusts to reflect the progress in each subject. This allows the user to easily see which subjects they have practiced the most and those that may require additional attention. 
 Additionally, when you start practicing the trivia game, a pie chart appears, showcasing the percentage of correct answers you've achieved overall. This chart is segmented by subjects, giving you insights into the proportion of correct answers within each subject area, enabling the user to focus their efforts accordingly.
-Graph Column Description
+#### Graph Column Description
 The column in our graph represents the frequency of gameplay for each theme. It illustrates the number of times you've engaged with each subject, providing insight into your level of interest and focus on specific topics.
-Pie Chart Description
+#### Pie Chart Description
 The pie chart visually represents the distribution of correct answers within each subject relative to the total number of attempted questions multiplied by the number of tests taken. Each segment of the pie chart corresponds to a subject, with the size of the segment indicating the proportion of correct answers achieved within that subject area. This calculation offers a comprehensive view of performance efficiency across different subjects.
-Percentage Inside the Circle Description
+#### Percentage Inside the Circle Description
 The percentages displayed inside the circle represent the cumulative number of correct answers obtained across all subjects relative to the total number of questions in all tests. 
 
 
@@ -96,9 +96,9 @@ Delve into the success percentages to assess your proficiency in various areas. 
 
 ![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/10568114-5768-460d-8efb-f2b14853dd84)
 
-We hope you like our study buddy,
+##### We hope you like our study buddy,
 
-[Try by yourself](https://trivia2-u5rb.onrender.com)
+##### [Try by yourself](https://trivia2-u5rb.onrender.com)
 
 
 
