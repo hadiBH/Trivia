@@ -51,7 +51,14 @@ The integration of the Trivia API into the Whac-A-Mole StudyBuddy project serves
 ### Render
 For deployment and hosting, we rely on Render, a robust platform that offers scalable infrastructure and automated deployments. By hosting Whac-A-Mole StudyBuddy on Render, we ensure high availability and reliability, enabling seamless access for users to the application's study resources and features.
 
+![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/795264ba-d280-477c-9c06-499b2a3f8241)
+![WhatsApp Image 2024-03-30 at 20 53 01](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/0d65d680-11ab-4e33-9501-cb801a215a99)
+![WhatsApp Image 2024-03-30 at 20 53 30](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/83fedd96-25f1-47e6-bb04-4cfac4eb38b6)
+![WhatsApp Image 2024-03-30 at 20 53 48](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/c1c11232-c72f-494d-9642-0cfc57c3898b)
+![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/10568114-5768-460d-8efb-f2b14853dd84)
+
+We hope you like our study buddy,
 [Try by yourself](https://trivia2-u5rb.onrender.com)
 
-![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/795264ba-d280-477c-9c06-499b2a3f8241)
+
 
