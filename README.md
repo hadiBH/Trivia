@@ -96,9 +96,9 @@ Delve into the success percentages to assess your proficiency in various areas. 
 
 ![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/10568114-5768-460d-8efb-f2b14853dd84)
 
-##### We hope you like our study buddy,
+#### We hope you like our study buddy,
 
-##### [Try by yourself](https://trivia2-u5rb.onrender.com)
+#### [Try by yourself](https://trivia2-u5rb.onrender.com)
 
 
 
