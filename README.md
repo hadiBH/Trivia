@@ -86,12 +86,12 @@ Your score will be tracked throughout the game, providing you with instant feedb
 ### Statistics
 After playing a few rounds, you can visit the statistics section to review your performance. Discover which subjects are your strengths and which ones need improvement. 
 
-For instance, the statistics may reveal that user's highest success rate, currently at 40%, lies in the subject of history.
 #### Subject Frequency
 The columns in the table represent the number of times you've engaged with each subject. For instance, in this case user played Entertainment music the most times, it indicates a significant passion on that subject, but this does not necessarily mean that the user is strong on this subject.
 
 #### Success Analysis
-Delve into the success percentages to assess your proficiency in various areas. For instance, if you have a success rate of 7% in music, it suggests room for improvement in this subject. Conversely, if your success rate in geography is low or non-existent, it indicates an area that requires attention and practice.
+For instance, this statistics may reveal that user's highest success rate, currently at 40%, lies in the subject of history.
+Delve into the success percentages to assess your proficiency in various areas. For instance, in this case user's success rate of 7% in music, it suggests room for improvement in this subject. Conversely, the success rate in geography is low or non-existent, it indicates an area that requires attention and practice.
 
 
 ![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/10568114-5768-460d-8efb-f2b14853dd84)
