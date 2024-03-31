@@ -41,10 +41,9 @@ export const getPrecentage = (stats: statsInterface): PercentageData => {
   const categoryPercentages: { name: string; y: number }[] = [];
 
   for (const category in stats) {
-    const { correctAnswers, numOfQuestions } = stats[category];
-    console.log(category, correctAnswers, numOfQuestions);
+    const { correctAnswers,numberOfTests } = stats[category];
     const categoryTotalCorrect = correctAnswers / 10;
-    const categoryTotalQuestions = numOfQuestions;
+    const categoryTotalQuestions = numberOfTests*10;
 
     totalCorrectAnswers += categoryTotalCorrect;
     totalQuestions += categoryTotalQuestions;
