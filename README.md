@@ -65,14 +65,14 @@ Upon launching the game, you will be greeted with a login page where you can ent
 ![WhatsApp Image 2024-03-31 at 18 05 43 (1)](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/8e75ba07-b49c-4e2d-8895-949c7d4e3531)
 
 ### Select Difficulty and Question Type
-After logging in successfully, you can choose between easy or hard difficulty levels and select the type of trivia questions you want to answer. 
+After logging in successfully, you can choose between several difficulty levels and select the type of trivia questions you want to answer. 
 
 ![WhatsApp Image 2024-03-30 at 20 53 01](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/0d65d680-11ab-4e33-9501-cb801a215a99)
 ![WhatsApp Image 2024-03-30 at 20 53 30](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/83fedd96-25f1-47e6-bb04-4cfac4eb38b6)
 
 ## Playing the Game
 ### Gameplay
-Once you've selected your preferences, the game begins! You will have 5 attempts to answer as many trivia questions as you can. A mole will pop out of a hole with a possible answer. Be careful not to be reckless and click on the wrong answer—stay focused!
+Once you've selected your preferences, the game begins! You will have 5 attempts to answer as many trivia questions as you can, the maximom score you can get is 100. A mole will pop out of a hole with a possible answer. Be careful not to be reckless and click on the wrong answer—stay focused!
 
 ### Whack the Mole
 As the mole pops up with a potential answer, click on the correct one as quickly as possible to score points. But be vigilant, clicking on the wrong answer will decrease your remaining tries.
