@@ -64,8 +64,6 @@ Upon launching the game, you will be greeted with a login page where you can ent
 
 ![WhatsApp Image 2024-03-31 at 18 05 43 (1)](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/8e75ba07-b49c-4e2d-8895-949c7d4e3531)
 
-![WhatsApp Image 2024-03-30 at 20 52 21](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/35275e24-771d-4207-a3d9-fb186b3c602a)
-
 ### Select Difficulty and Question Type
 After logging in successfully, you can choose between easy or hard difficulty levels and select the type of trivia questions you want to answer. 
 
