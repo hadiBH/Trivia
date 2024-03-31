@@ -1,3 +1,5 @@
+
+
 # Introduction
 In today's fast-paced world, finding innovative ways to make learning enjoyable and engaging is crucial. With this in mind, we introduce a new app that combines the classic arcade game Whac-A-Mole with the challenge of trivia questions. Our app offers users a unique opportunity to test their knowledge across various subjects while having fun.
 
@@ -22,7 +24,7 @@ Additionally, when you start practicing the trivia game, a pie chart appears, sh
 Integrating education with entertainment through games like Whac A Mole Study Buddy offers a transformative approach to learning, bridging the gap between traditional study methods and engaging, interactive experiences. By infusing educational content into a familiar and enjoyable format, such as the classic Whac-A-Mole game, our Study Buddy taps into the intrinsic human desire for fun and excitement. Through gamification, users are incentivized to actively participate in their learning journey, as the thrill of gameplay motivates them to tackle challenging questions and strive for mastery.
 
 
-#Project Components and Technologies
+# Project Components and Technologies
 
 ## TypeScript
 We used TypeScript in our project due to its ability to provide type options, significantly enhancing our ability to detect and rectify bugs during the development process.
