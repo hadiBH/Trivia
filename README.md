@@ -1,6 +1,10 @@
 # WHAC - A - MOLE Study Buddy
 
 
+### By: Hadar Ben Hamo and Yael Elad
+
+
+
 
 ## Introduction
 
