@@ -52,4 +52,5 @@ The integration of the Trivia API into the Whac-A-Mole StudyBuddy project serves
 For deployment and hosting, we rely on Render, a robust platform that offers scalable infrastructure and automated deployments. By hosting Whac-A-Mole StudyBuddy on Render, we ensure high availability and reliability, enabling seamless access for users to the application's study resources and features.
 
 
+![image](https://github.com/hadiBH/Whac-A-Mole-Study-Buddy/assets/97242311/795264ba-d280-477c-9c06-499b2a3f8241)
 
